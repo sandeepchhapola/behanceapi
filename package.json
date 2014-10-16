@@ -1,0 +1,14 @@
+{
+    "name": "behanceapi",
+    "version": "0.0.1",
+    "description": "",
+    "main": "behance.js",
+    "scripts": {
+        "start": "behance.js"
+    },
+    "author": "sandeeochhapola",
+    "license": "freeware",
+    "dependencies": {
+        "request": "~2.45.0"
+    }
+}
