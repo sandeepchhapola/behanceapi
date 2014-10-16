@@ -1,10 +1,14 @@
 {
     "name": "behanceapi",
     "version": "0.0.1",
-    "description": "",
+    "description": "A small library providing utility methods to get data from Behance Api",
     "main": "behanceapi.js",
     "author": "sandeeochhapola",
-    "license": "freeware",
+    "license": "",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:sandeepchhapola/behanceapi.git"
+    },
     "dependencies": {
         "request": "~2.45.0"
     }
