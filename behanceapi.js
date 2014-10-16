@@ -1,5 +1,5 @@
 var behance = require('./lib/behance');
 
-expotrs.behanceapi = function (clientId) {
+exports.Behance = function (clientId) {
     return new behance.Behance(clientId);
 };
