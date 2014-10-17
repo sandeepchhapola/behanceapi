@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "description": "A small library providing utility methods to get data from Behance Api",
     "main": "behanceapi.js",
-    "author": "sandeeochhapola",
+    "author": "sandeepchhapola",
     "license": "",
     "repository": {
         "type": "git",
