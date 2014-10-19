@@ -30,7 +30,7 @@ behance.getProjectById('957077', function (err, result) {
 
 ##### 1). getProjects(params, done)
 
-    `Search for projects. It takes two parameters, first is `params` which is an Object having optional parameters (i.e q, page, tags, city, time and much more provided by behance) in key-value pair, second is `done` which is a callback function.`
+    Search for projects. It takes two parameters, first is `params` which is an Object having optional parameters (i.e q, page, tags, city, time and much more provided by behance) in key-value pair, second is `done` which is a callback function.
 
 ##### 2). getProjectById(projectId, done)
 
