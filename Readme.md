@@ -34,15 +34,15 @@ behance.getProjectById('957077', function (err, result) {
 
 ##### 2). getProjectById(projectId, done)
 
-`Get the information and content of a project.`
+`Get the information and content of a project. It takes two parameters, first is `*projectId*` of a behance project, second is `*done*` which is a callback function.`
 
 ##### 3). getCommentsFromProject(projectId, page, done)
 
-`Get the comments for a project.`
+`Get the comments for a project. It allows three parameters, first is `*projectId*` of a behance project, second is `*page*` which is page number and it is optional, third is `*done*` which is a callback function.`
 
 ##### 4). creativesToFollowList(page, done)
 
-`Provides a list of creatives you might be interested in following.`
+`Provides a list of creatives you might be interested in following.it allows two parameters, first is `*page*` which is page number and it is optional, second is `*done*` which is a callback function.`
 
 ##### 5). getAllCreativeFields(done)
 
