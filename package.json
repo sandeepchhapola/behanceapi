@@ -1,6 +1,6 @@
 {
   "name": "behanceapi",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A small library providing utility methods to get data from Behance Api",
   "main": "behanceapi.js",
   "author": "sandeepchhapola",
