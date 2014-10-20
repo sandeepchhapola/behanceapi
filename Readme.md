@@ -30,7 +30,7 @@ behance.getProjectById('957077', function (err, result) {
 
 ##### 1). getProjects(params, done)
 
-`Search for projects. It takes two parameters, first is `*params*` which is an Object having optional parameters (i.e q, page, tags, city, time and much more provided by behance) in key-value pair, second is `*done*` which is a callback function.`
+`Search for projects. It takes two parameters, first is `*params*` which is an Object having parameters (i.e q, page, tags, city, time and much more provided by behance) in key-value pair and it is optional, second is `*done*` which is a callback function.`
 
 ##### 2). getProjectById(projectId, done)
 
@@ -46,72 +46,72 @@ behance.getProjectById('957077', function (err, result) {
 
 ##### 5). getAllCreativeFields(done)
 
-`Retrieves all Creative Fields in two groups, all fields (in 'fields') and popular ones (in 'popular').`
+`Retrieves all Creative Fields in two groups, all fields (in 'fields') and popular ones (in 'popular').it allows one parameter which is callback function`
 
 ##### 6). getBehanceUsersList(params, done)
 
-`Search for users.`
+`Search for users.It takes two parameters, first is `*params*` which is an Object having parameters (provided by behance) in key-value pair and it is optional, second is `*done*` which is a callback function.`
 
 ##### 7). getBehanceUser(user, done)
 
-`Get basic information about a user. The user argument can be an ID or username.`
+`Get basic information about a user. The `*user*` argument can be an ID or username and `*done*` is a callback function.`
 
 ##### 8). getBehanceUserProjects(user, params, done)
 
-`Get the projects published by a user. The user argument can be an ID or username.`
+`Get the projects published by a user. The `*user*` argument can be an ID or username,`*params*` argument is an Object having parameters (provided by behance) in key-value pair and it is optional, `*done*` argument is a callback function.`
 
 ##### 9). getBehanceUserWips(user, params, done)
 
-`Get the works-in-progress published by a user. The user argument can be an ID or username.`
+`Get the works-in-progress published by a user. The `*user*` argument can be an ID or username,`*params*` argument is an Object having parameters (provided by behance) in key-value pair and it is optional, `*done*` argument is a callback function.`
 
 ##### 10). getBehanceUserAppreciations(user, page, done)
 
-`Get a list of user's recently appreciated projects. The user argument can be an ID or username.`
+`Get a list of user's recently appreciated projects. The `*user*` argument can be an ID or username,`*page*` argument is just a page number and it is optional, `*done*` argument is a callback function.`
 
 ##### 11). getBehanceUserCollections(user, params, done)
 
-`Get a list of a user's collections. The user argument can be an ID or username.`
+`Get a list of a user's collections. The `*user*` argument can be an ID or username,`*params*` argument is an Object having parameters (provided by behance) in key-value pair and it is optional, `*done*` argument is a callback function.`
 
 ##### 12). getBehanceUserStats(user, done)
 
-`Get statistics (all-time and today) for a specific user. Includes number of project views, appreciations, comments, and profile views.`
+`Get statistics (all-time and today) for a specific user. Includes number of project views, appreciations, comments, and profile views. The `*user*` argument can be an ID or username,`*params*` argument is an Object having parameters (provided by behance) in key-value pair and it is optional, `*done*` argument is a callback function.`
 
 ##### 13). getBehanceUserFollowers(user, params, done)
 
-`Get a list of creatives who follow the user.`
+`Get a list of creatives who follow the user. The `*user*` argument can be an ID or username,`*params*` argument is an Object having parameters (provided by behance) in key-value pair and it is optional, `*done*` argument is a callback function.`
 
 ##### 14). getBehanceUserFollowing(user, params, done)
 
-`Get a list of creatives followed by the user.`
+`Get a list of creatives followed by the user. The `*user*` argument can be an ID or username,`*params*` argument is an Object having parameters (provided by behance) in key-value pair and it is optional, `*done*` argument is a callback function.`
 
 ##### 15). getBehanceUserWorkExperienceList(user, done)
 
-`A list of the user's professional experience`
+`A list of the user's professional experience. The `*user*` argument can be an ID or username, `*done*` argument is a callback function.`
 
 ##### 16). getWips(params, done)
 
-`Search for works-in-progress.`
+`Search for works-in-progress. The `*params*` argument is an Object having parameters (provided by behance) in key-value pair and it is optional, `*done*` argument is a callback function.`
 
 ##### 17). getWipsByWipId(wipId, done)
 
-`Get information about a work in progress.`
+`Get information about a work in progress. The `*wipId*` is a ID of work-in-process, and `*done*` argument is a callback function.`
 
 ##### 18). getWipsRevisionInfo(wipId, revisionId, done)
 
-`Get information and contents of a revision of a work in progress.`
+`Get information and contents of a revision of a work in progress. The `*wipId*` argument is a ID of work-in-process, `*revisionId*` a ID of revision of a work in progress, and `*done*` argument is a callback function.`
 
 ##### 19). getCommentsOnRevisionWips(wipId, revisionId, page, done)
 
-`Get comments on a revision of a work in progress.`
+`Get comments on a revision of a work in progress. The `*wipId*` argument is a ID of work-in-process, `*revisionId*` a ID of revision of a work in progress,`*page*` argument is just a page number ans it is optional, and `*done*` argument is a callback function.`
 
 ##### 20). getCollections(params, done)
 
-`Search for collections.`
+`Search for collections. It takes two parameters, first is `*params*` which is an Object having parameters (i.e q, page, tags, city, time and much more provided by behance) in key-value pair and it is optional, second is `*done*` which is a callback function.`
 
 ##### 21). getCollectionById(collectionId, done)
 
-`Get basic information about a collection.`
+`Get basic information about a collection. The `*collectionId*` is a ID of a collection, and `*done*` argument is a callback function.`
 
 ##### 22). getProjectsFromCollection(collectionId, params, done)
 
-`Get projects from a collection.`
+`Get projects from a collection. The `*collectionId*` argument is an ID of a collection,`*params*` argument is an Object having parameters (provided by behance) in key-value pair and it is optional, `*done*` argument is a callback function.`
