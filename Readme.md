@@ -74,7 +74,7 @@ behance.getProjectById('957077', function (err, result) {
 
 ##### 12). getBehanceUserStats(user, done)
 
-`Get statistics (all-time and today) for a specific user. Includes number of project views, appreciations, comments, and profile views. The `*user*` argument can be an ID or username,`*params*` argument is an Object having parameters (provided by behance) in key-value pair and it is optional, `*done*` argument is a callback function.`
+`Get statistics (all-time and today) for a specific user. Includes number of project views, appreciations, comments, and profile views. The `*user*` argument can be an ID or username, `*done*` argument is a callback function.`
 
 ##### 13). getBehanceUserFollowers(user, params, done)
 
