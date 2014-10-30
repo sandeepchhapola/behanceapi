@@ -1,22 +1,29 @@
 {
-  "name": "behanceapi",
-  "version": "1.0.7",
-  "description": "A small library providing utility methods to get data from Behance Api",
-  "main": "behanceapi.js",
-  "author": "sandeepchhapola",
-  "license": "GPLv3",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:sandeepchhapola/behanceapi.git"
-  },
-  "dependencies": {
-    "request": "~2.45.0"
-  },
-  "bugs": {
-    "url": "https://github.com/sandeepchhapola/behanceapi/issues"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+    "name": "behanceapi",
+    "version": "1.0.8",
+    "description": "A small library providing utility methods to get data from Behance Api",
+    "main": "behanceapi.js",
+    "author": "sandeepchhapola",
+    "license": "GPLv3",
+    "tags": [
+        "behanceapi",
+        "node",
+        "behance",
+        "api",
+        "util"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:sandeepchhapola/behanceapi.git"
+    },
+    "dependencies": {
+        "request": "~2.45.0"
+    },
+    "bugs": {
+        "url": "https://github.com/sandeepchhapola/behanceapi/issues"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
 }
