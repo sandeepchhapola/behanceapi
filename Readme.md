@@ -1,5 +1,6 @@
 # behanceapi
 
+## How to install
 `npm install behanceapi --save`
 
 ## How to use
@@ -122,4 +123,3 @@ behance.getProjectById('957077', function (err, result) {
 
 [Click here](https://github.com/sandeepchhapola/BehanceapiExamples) to explore more examples on git.
 
-[Click here](https://www.behance.net/dev/api/endpoints) to explore documentation on Behance.net.
