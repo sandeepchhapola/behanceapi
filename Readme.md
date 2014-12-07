@@ -1,5 +1,7 @@
 # behanceapi
 
+`npm install behanceapi --save`
+
 ## How to use
 
 behanceapi is designed to get data from  Behance API in vary simplest way. 
