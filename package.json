@@ -4,6 +4,7 @@
     "description": "A small library providing utility methods to get data from Behance Api",
     "main": "behanceapi.js",
     "author": "sandeepchhapola",
+    "homepage":"https://github.com/sandeepchhapola/behanceapi/wiki",
     "license": "GPLv3",
     "tags": [
         "behanceapi",
