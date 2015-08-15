@@ -1,13 +1,14 @@
 # behanceapi
 
-## How to install
+behanceapi is designed to get data from  Behance API in vary simplest way.
+
+##  How to install
 `npm install behanceapi --save`
 
 ## How to use
 
-behanceapi is designed to get data from  Behance API in vary simplest way. 
-
-```javascript
+*example*
+```
 var behanceapi = require('behanceapi');
 var behance = new behanceapi.Behance('YOUR CLIENT_ID');
 
@@ -28,97 +29,202 @@ behance.getProjectById('957077', function (err, result) {
     console.log("Result: ", JSON.parse(result));
   }
 });
+
 ```
+***
+
 ### `behanceapi` provides the following functions.
 
-#### 1). getProjects(params, done)
+***
 
-`Search for projects. It takes two parameters, first is "params" which is an Object having parameters (i.e q, page, tags, city, time and much more provided by behance) in key-value pair and it is optional, second is "done" which is a callback function.`
+### `behance.getProjects(params, done)`
+Search for projects.
 
-#### 2). getProjectById(projectId, done)
+*arguments*
+* `params`: is an optional object that you use to send with request to Behance API
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-`Get the information and content of a project. It takes two parameters, first is "projectId" of a behance project, second is "done" which is a callback function.`
+### `behance.getProjectById(projectId, done)`
+Get the information and content of a project.
 
-#### 3). getCommentsFromProject(projectId, page, done)
+*arguments*
+* `projectId`: is used to specify a particular project to get
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-`Get the comments for a project. It allows three parameters, first is "projectId" of a behance project, second is "page" which is page number and it is optional, third is "done" which is a callback function.`
+### `behance.getCommentsFromProject(projectId, page, done)`
+Get the comments for a project.
 
-#### 4). creativesToFollowList(page, done)
+*arguments*
+* `projectId`: is used to specify a particular project to get
+* `page`:  is a number that determine the page that need to retrieve
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-`Provides a list of creatives you might be interested in following.it allows two parameters, first is "page" which is page number and it is optional, second is "done" which is a callback function.`
+### `behance.creativesToFollowList(page, done)`
+Provides a list of creatives you might be interested in following.
 
-#### 5). getAllCreativeFields(done)
+*arguments*
+* `page`:  is a number that determine the page that need to retrieve
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-`Retrieves all Creative Fields in two groups, all fields (in "fields") and popular ones (in "popular").it allows one parameter which is callback function`
+### `behance.getAllCreativeFields(done)`
+Retrieves all Creative Fields in two groups, all fields (in "fields") and popular ones (in "popular").
 
-#### 6). getBehanceUsersList(params, done)
+*arguments*
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-`Search for users.It takes two parameters, first is "params" which is an Object having parameters (provided by behance) in key-value pair and it is optional, second is "done" which is a callback function.`
+### `behance.getBehanceUsersList(params, done)`
+Search for users.
 
-#### 7). getBehanceUser(user, done)
+*arguments*
+* `params`: is an optional object that you use to send with request to Behance API
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-`Get basic information about a user. The "user" argument can be an ID or username and "done" is a callback function.`
+### `behance.getBehanceUser(user, done)`
+Get basic information about a user.
 
-#### 8). getBehanceUserProjects(user, params, done)
+*arguments*
+* `user`: is used to specify a particular user to get. It can be a username or userId.
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-`Get the projects published by a user. The "user" argument can be an ID or username,"params" argument is an Object having parameters (provided by behance) in key-value pair and it is optional, "done" argument is a callback function.`
+### `behance.getBehanceUserProjects(user, params, done)`
+Get the projects published by a user.
 
-#### 9). getBehanceUserWips(user, params, done)
+*arguments*
+* `user`: is used to specify a particular user to get. It can be a username or userId.
+* `params`: is an optional object that you use to send with request to Behance API
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-`Get the works-in-progress published by a user. The "user" argument can be an ID or username,"params" argument is an Object having parameters (provided by behance) in key-value pair and it is optional, "done" argument is a callback function.`
+### `behance.getBehanceUserWips(user, params, done)`
+Get the works-in-progress published by a user.
 
-#### 10). getBehanceUserAppreciations(user, page, done)
+*arguments*
+* `user`: is used to specify a particular user. It can be a username or userId.
+* `params`: is an optional object that you use to send with request to Behance API
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-`Get a list of user's recently appreciated projects. The "user" argument can be an ID or username,"page" argument is just a page number and it is optional, "done" argument is a callback function.`
+### `behance.getBehanceUserAppreciations(user, page, done)`
+Get a list of user's recently appreciated projects.
 
-#### 11). getBehanceUserCollections(user, params, done)
+*arguments*
+* `user`: is used to specify a particular user. It can be a username or userId.
+* `page`:  is a number that determine the page that need to retrieve
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-`Get a list of a user's collections. The "user" argument can be an ID or username,"params" argument is an Object having parameters (provided by behance) in key-value pair and it is optional, "done" argument is a callback function.`
+### `behance.getBehanceUserCollections(user, params, done)`
+Get a list of a user's collections.
 
-#### 12). getBehanceUserStats(user, done)
+*arguments*
+* `user`: is used to specify a particular user. It can be a username or userId.
+* `params`: is an optional object that you use to send with request to Behance API
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-`Get statistics (all-time and today) for a specific user. Includes number of project views, appreciations, comments, and profile views. The "user" argument can be an ID or username, "done" argument is a callback function.`
+### `behance.getBehanceUserStats(user, done)`
+Get statistics (all-time and today) for a specific user. Includes number of project views, appreciations, comments, and profile views.
 
-#### 13). getBehanceUserFollowers(user, params, done)
+*arguments*
+* `user`: is used to specify a particular user. It can be a username or userId.
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-`Get a list of creatives who follow the user. The "user" argument can be an ID or username,"params" argument is an Object having parameters (provided by behance) in key-value pair and it is optional, "done" argument is a callback function.`
+### `behance.getBehanceUserFollowers(user, params, done)`
+Get a list of creatives who follow the user.
 
-#### 14). getBehanceUserFollowing(user, params, done)
+*arguments*
+* `user`: is used to specify a particular user. It can be a username or userId.
+* `params`: is an optional object that you use to send with request to Behance API
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-`Get a list of creatives followed by the user. The "user" argument can be an ID or username,"params" argument is an Object having parameters (provided by behance) in key-value pair and it is optional, "done" argument is a callback function.`
+### `behance.getBehanceUserFollowing(user, params, done)`
+Get a list of creatives followed by the user.
 
-#### 15). getBehanceUserWorkExperienceList(user, done)
+*arguments*
+* `user`: is used to specify a particular user. It can be a username or userId.
+* `params`: is an optional object that you use to send with request to Behance API
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-`A list of the user's professional experience. The "user" argument can be an ID or username, "done" argument is a callback function.`
+### `behance.getBehanceUserWorkExperienceList(user, done)`
+A list of the user's professional experience.
 
-#### 16). getWips(params, done)
+*arguments*
+* `user`: is used to specify a particular user. It can be a username or userId.
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-`Search for works-in-progress. The "params" argument is an Object having parameters (provided by behance) in key-value pair and it is optional, "done" argument is a callback function.`
+### `behance.getWips(params, done)`
+Search for works-in-progress.
 
-#### 17). getWipsByWipId(wipId, done)
+*arguments*
+* `params`: is an optional object that you use to send with request to Behance API
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-`Get information about a work in progress. The "wipId" is a ID of work-in-process, and "done" argument is a callback function.`
+### `behance.getWipsByWipId(wipId, done)`
+Get information about a work in progress
 
-#### 18). getWipsRevisionInfo(wipId, revisionId, done)
+*arguments*
+* `wipId`: is used to specify a particular work-in-progress to get
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-`Get information and contents of a revision of a work in progress. The "wipId" argument is a ID of work-in-process, "revisionId" a ID of revision of a work in progress, and "done" argument is a callback function.`
 
-#### 19). getCommentsOnRevisionWips(wipId, revisionId, page, done)
+### `behance.getWipsRevisionInfo(wipId, revisionId, done)`
+Get information and contents of a revision of a work in progress.
 
-`Get comments on a revision of a work in progress. The "wipId" argument is a ID of work-in-process, "revisionId" a ID of revision of a work in progress,"page" argument is just a page number ans it is optional, and "done" argument is a callback function.`
+*arguments*
+* `wipId`: is used to specify a particular work-in-progress to get.
+* `revisionId`: is used to specify a particular revision of a work in progress.
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-#### 20). getCollections(params, done)
+### `behance.getCommentsOnRevisionWips(wipId, revisionId, page, done)`
+Get comments on a revision of a work in progress.
 
-`Search for collections. It takes two parameters, first is "params" which is an Object having parameters (i.e q, page, tags, city, time and much more provided by behance) in key-value pair and it is optional, second is "done" which is a callback function.`
+*arguments*
+* `wipId`: is used to specify a particular work-in-progress to get.
+* `revisionId`: is used to specify a particular revision of a work in progress.
+* `page`:  is a number that determine the page that need to retrieve.
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-#### 21). getCollectionById(collectionId, done)
 
-`Get basic information about a collection. The "collectionId" is a ID of a collection, and "done" argument is a callback function.`
+### `behance.getCollections(params, done)`
+Search for collections.
 
-#### 22). getProjectsFromCollection(collectionId, params, done)
+*arguments*
+* `params`: is an optional object that you use to send with request to Behance API
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
-`Get projects from a collection. The "collectionId" argument is an ID of a collection, "params" argument is an Object having parameters (provided by behance) in key-value pair and it is optional, "done" argument is a callback function.`
+### `behance.getCollectionById(collectionId, done)`
+Get basic information about a collection.
 
+*arguments*
+* `collectionId`: is used to specify a particular collection to get.
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
+
+
+### `behance.getProjectsFromCollection(collectionId, params, done)`
+Get projects from a collection.
+
+*arguments*
+* `collectionId`: is used to specify a particular collection to get.
+* `params`: is an optional object that you use to send with request to Behance API
+* `done`: is a function that is called when the data is retrieved from the server.
+`function(err, result){}`
 
 
 [Click here](https://github.com/sandeepchhapola/BehanceapiExamples) to explore more examples on git.
