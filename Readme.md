@@ -9,8 +9,8 @@ behanceapi is designed to get data from  Behance API in vary simplest way.
 
 *example*
 ```
-var behanceapi = require('behanceapi');
-var behance = new behanceapi.Behance('YOUR CLIENT_ID');
+var Behance = require('behanceapi')
+    , behance = new Behance('YOUR CLIENT_ID');
 
 behance.getProjects({q: "Bikes", page: 2}, function (err, result) {
   if (err) {
