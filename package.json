@@ -11,7 +11,8 @@
         "node",
         "behance",
         "api",
-        "util"
+        "util",
+        "npm"
     ],
     "repository": {
         "type": "git",

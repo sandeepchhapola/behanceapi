@@ -1,5 +1,5 @@
-var behance = require('./lib/behance');
+var Behance = require('./lib/behance');
 
-exports.Behance = function (clientId) {
-    return new behance.Behance(clientId);
+module.exports = function (clientId) {
+    return new Behance(clientId);
 };
